@@ -28,12 +28,21 @@ async function main() {
   tl.innerHTML = data.timeline.map(m => `
     <div class="month">
       <div class="monthTitle">
-        <strong>${m.title}</strong>
+        <strong>${escapeHtml(m.title)}</strong>
         <span class="badge">${m.month}</span>
       </div>
+  
       <ul>
         ${m.highlights.map(h => `<li>${escapeHtml(h)}</li>`).join('')}
       </ul>
+  
+      <div class="photoGrid">
+        ${(m.photos || []).map(p => `
+          <div class="photoWrap">
+            <img src="${p}" alt="${escapeHtml(m.title)}" />
+          </div>
+        `).join('')}
+      </div>
     </div>
   `).join('');
 
