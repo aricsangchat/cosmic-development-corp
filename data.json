@@ -38,58 +38,133 @@
   ],
   "timeline": [
     {
-      "month": "2025-06",
-      "title": "Kickoff + scope locked",
-      "highlights": ["Scope finalized", "Planning + coordination", "Initial teardown prep"],
-      "media": []
+      "month": "2025-04-28",
+      "title": "Property Acquired",
+      "highlights": [
+        "Official acquisition of Rawai property",
+        "Initial walkthrough and documentation"
+      ],
+      "photos": [
+        "assets/progress/2025-04-acquisition-1.jpg",
+        "assets/progress/2025-04-acquisition-2.jpg"
+      ]
     },
     {
-      "month": "2025-07",
-      "title": "Build phase (update)",
-      "highlights": ["(Replace with your real July progress)"],
-      "media": []
+      "month": "2025-05 to 2025-06",
+      "title": "Demolition & Full Gut",
+      "highlights": [
+        "Existing interior walls demolished",
+        "Old materials removed",
+        "Building fully gutted"
+      ],
+      "photos": [
+        "assets/progress/2025-05-demo-1.jpg",
+        "assets/progress/2025-05-demo-2.jpg"
+      ]
+    },
+    {
+      "month": "2025-06 to 2025-07",
+      "title": "New Interior Walls & Layout",
+      "highlights": [
+        "New structural layout built",
+        "Interior wall framing completed"
+      ],
+      "photos": [
+        "assets/progress/2025-06-walls-1.jpg",
+        "assets/progress/2025-06-walls-2.jpg"
+      ]
     },
     {
       "month": "2025-08",
-      "title": "Build phase (update)",
-      "highlights": ["(Replace with your real August progress)"],
-      "media": []
+      "title": "Plastering & Wall Smoothing",
+      "highlights": [
+        "Interior walls plastered",
+        "Old tiles removed",
+        "Surface preparation"
+      ],
+      "photos": [
+        "assets/progress/2025-08-plaster-1.jpg",
+        "assets/progress/2025-08-plaster-2.jpg"
+      ]
     },
     {
       "month": "2025-09",
-      "title": "Build phase (update)",
-      "highlights": ["(Replace with your real September progress)"],
-      "media": []
+      "title": "New Plumbing & Bathroom Tile Walls",
+      "highlights": [
+        "Plumbing installed",
+        "Bathroom wall tiles started"
+      ],
+      "photos": [
+        "assets/progress/2025-09-plumbing-1.jpg",
+        "assets/progress/2025-09-plumbing-2.jpg"
+      ]
     },
     {
       "month": "2025-10",
-      "title": "Build phase (update)",
-      "highlights": ["(Replace with your real October progress)"],
-      "media": []
+      "title": "Floor Tiles & Front Wall Construction",
+      "highlights": [
+        "Floor tiles laid",
+        "Front house wall constructed (late October)"
+      ],
+      "photos": [
+        "assets/progress/2025-10-tiles-1.jpg",
+        "assets/progress/2025-10-wall-1.jpg"
+      ]
     },
     {
       "month": "2025-11",
-      "title": "Build phase (update)",
-      "highlights": ["(Replace with your real November progress)"],
-      "media": []
+      "title": "Windows, Roof & Carport Walls",
+      "highlights": [
+        "Windows installed",
+        "Main roof installed",
+        "Carport walls constructed"
+      ],
+      "photos": [
+        "assets/progress/2025-11-roof-1.jpg",
+        "assets/progress/2025-11-carport-1.jpg"
+      ]
     },
     {
       "month": "2025-12",
-      "title": "Build phase (update)",
-      "highlights": ["(Replace with your real December progress)"],
-      "media": []
+      "title": "Carport Roof, Doors & Exterior Rendering",
+      "highlights": [
+        "Carport roof installed",
+        "Doors installed",
+        "Exterior back rendered (late December)"
+      ],
+      "photos": [
+        "assets/progress/2025-12-roof-1.jpg",
+        "assets/progress/2025-12-render-1.jpg"
+      ]
     },
     {
       "month": "2026-01",
-      "title": "Finalization phase (update)",
-      "highlights": ["(Replace with your real January progress)"],
-      "media": []
+      "title": "Electrical, Ceiling & Lighting",
+      "highlights": [
+        "Electrical installation completed",
+        "Ceiling installed",
+        "Jan 10: lights tested",
+        "Jan 15: lights installed"
+      ],
+      "photos": [
+        "assets/progress/2026-01-lights-1.jpg",
+        "assets/progress/2026-01-ceiling-1.jpg"
+      ]
     },
     {
       "month": "2026-02",
-      "title": "Current status",
-      "highlights": ["Outstanding work identified (~300k THB)", "Preparing for rental readiness"],
-      "media": []
+      "title": "Painting, Driveway & Carport Privacy Upgrade",
+      "highlights": [
+        "Interior & exterior painting started (early Feb)",
+        "Mid Feb: paint touchups & color matching",
+        "Feb 24: driveway leveling",
+        "Water well removed and ground leveled",
+        "Decision made to close carport walls for privacy"
+      ],
+      "photos": [
+        "assets/progress/2026-02-paint-1.jpg",
+        "assets/progress/2026-02-driveway-1.jpg"
+      ]
     }
   ]
 }
