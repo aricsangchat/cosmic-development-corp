@@ -1,35 +1,181 @@
 :root{
-  --bg:#0b0f14; --card:#111823; --muted:#9bb0c7; --text:#e9f1fb;
-  --line:#1e2a3a; --chip:#152133;
+  --bg:#07060b;
+  --card:#0f0c16;
+  --card2:#120f1d;
+  --muted:#b7b2c6;
+  --text:#f4f0ff;
+
+  --line:rgba(241, 224, 255, 0.12);
+
+  --purple:#8b5cf6;
+  --purple2:#a78bfa;
+  --gold:#f2c94c;
+  --gold2:#ffd67a;
+
+  --glow:rgba(139,92,246,0.25);
+  --glow2:rgba(242,201,76,0.18);
 }
+
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(800px 500px at 20% 10%, rgba(139,92,246,0.12), transparent 55%),
+    radial-gradient(600px 450px at 90% 0%, rgba(242,201,76,0.10), transparent 60%),
+    radial-gradient(600px 450px at 40% 90%, rgba(167,139,250,0.10), transparent 60%),
+    var(--bg);
+  color:var(--text);
+}
+
 .wrap{max-width:1100px;margin:0 auto;padding:24px}
-h1{font-size:34px;margin:0 0 8px}
+h1{font-size:34px;margin:0 0 6px;letter-spacing:0.2px}
 h2{margin:0 0 10px}
 h3{margin:0 0 10px}
-.sub{color:var(--muted);margin:0 0 12px}
+.sub{color:var(--muted);margin:0}
 .muted{color:var(--muted)}
 .tiny{font-size:12px}
+.note{margin-top:10px;max-width:58ch}
+
 .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch}
-.heroCard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
-.subcard{background:#0f1621;border:1px solid var(--line);border-radius:12px;padding:14px}
+@media (max-width:900px){.hero{grid-template-columns:1fr}}
+
+.brandRow{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.sigil{
+  width:42px;height:42px;border-radius:14px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(242,201,76,0.65), transparent 45%),
+    radial-gradient(circle at 70% 70%, rgba(139,92,246,0.55), transparent 55%),
+    linear-gradient(145deg, rgba(255,255,255,0.10), rgba(0,0,0,0.25));
+  border:1px solid var(--line);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.35);
+}
+
+.heroCard{
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.12)), var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.35);
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.12)), var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:18px;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.28);
+}
+
+.subcard{
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.10)), var(--card2);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+}
+
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media (max-width:900px){.hero,.grid2{grid-template-columns:1fr}}
-.chips{display:flex;gap:10px;flex-wrap:wrap}
-.chip{background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}}
+
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.chip{
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--line);
+  padding:6px 10px;
+  border-radius:999px;
+  color:var(--muted);
+  font-size:13px;
+}
+.chipGold{
+  color: rgba(255, 235, 170, 0.95);
+  border-color: rgba(242,201,76,0.25);
+  background: rgba(242,201,76,0.08);
+}
+
 .kv{display:grid;grid-template-columns:1fr auto;gap:8px 14px;align-items:center}
 .k{color:var(--muted)}
-.v{font-weight:700}
+.v{font-weight:800;letter-spacing:0.2px}
+
 .month{border-top:1px solid var(--line);padding:12px 0}
 .month:first-child{border-top:none}
 .monthTitle{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
-.badge{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:2px 8px;border-radius:999px}
+.badge{
+  font-size:12px;
+  color:rgba(255,255,255,0.78);
+  border:1px solid var(--line);
+  padding:2px 8px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.02);
+}
+
 ul{margin:8px 0 0 18px}
 .totalRow{display:flex;justify-content:space-between;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+
 table{width:100%;border-collapse:collapse}
 td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;color:var(--muted)}
-th{color:var(--text);font-weight:600}
-code{color:#cfe5ff}
+th{color:var(--text);font-weight:700}
+
+.glow{
+  border-color: rgba(139,92,246,0.25);
+  box-shadow:
+    0 18px 50px rgba(0,0,0,0.35),
+    0 0 0 1px rgba(139,92,246,0.08),
+    0 0 60px rgba(139,92,246,0.08);
+}
+
+.labelRow{display:flex;justify-content:space-between;align-items:center;margin:10px 0 8px}
+input[type="range"]{width:100%;accent-color: var(--gold);}
+
+.miniGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+@media (max-width:900px){.miniGrid{grid-template-columns:1fr}}
+.mini{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px;
+  background:rgba(255,255,255,0.02);
+}
+.miniK{color:var(--muted);font-size:13px;margin-bottom:6px}
+.miniV{font-weight:850;font-size:18px}
+
+.field{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+input, textarea{
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px 12px;
+  color:var(--text);
+  outline:none;
+}
+input:focus, textarea:focus{
+  border-color: rgba(242,201,76,0.35);
+  box-shadow: 0 0 0 4px rgba(242,201,76,0.10);
+}
+
+.check{display:flex;gap:10px;align-items:flex-start;margin-top:12px}
+.check input{margin-top:3px}
+
+.btn{
+  margin-top:12px;
+  width:100%;
+  border:none;
+  border-radius:14px;
+  padding:12px 14px;
+  font-weight:800;
+  color:#1a1406;
+  background: linear-gradient(180deg, var(--gold2), var(--gold));
+  cursor:pointer;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35), 0 0 50px var(--glow2);
+}
+.btn:hover{filter:brightness(1.03)}
+
+.disclaimer{
+  margin-top:14px;
+  border:1px solid rgba(242,201,76,0.22);
+  background: rgba(242,201,76,0.06);
+  border-radius:14px;
+  padding:12px;
+  color: rgba(255, 245, 210, 0.92);
+}
+
+code{color:#f6d67c}
 footer{margin-top:18px}
