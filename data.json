@@ -1,6 +1,6 @@
 {
   "project": {
-    "name": "Rawai Renovation — Timeline & Investor Option",
+    "name": "Rawai Renovation — Profit Participation",
     "manager": "Cosmic Development Corp.",
     "location": "Rawai, Phuket, Thailand",
     "timeline_start": "2025-06-01",
@@ -9,18 +9,26 @@
   "financials": {
     "invested_to_date_thb": 2800000,
     "outstanding_work_thb": 300000,
+    "total_after_completion_thb": 3100000,
     "estimated_rent_thb_per_month": 30000,
     "estimated_sale_value_thb_low": 4700000,
     "estimated_sale_value_thb_high": 4900000
   },
-  "ownership": [
-    { "name": "Aric", "percent": 50 },
-    { "name": "Terry", "percent": 50 }
+  "profit_split": [
+    { "name": "Aric", "percent": 30 },
+    { "name": "Terry", "percent": 30 },
+    { "name": "Future Participants Pool", "percent": 40 }
   ],
-  "investor_option": {
-    "shares_available_from": "Terry",
-    "max_percent_of_total_project_available": 25,
-    "note": "Up to 50% of Terry’s shares (i.e., up to 25% of the whole project) is available, plus the investor funds the outstanding work. Investor receives proportional rental profit + sale proceeds/profit."
+  "participation": {
+    "max_pool_percent": 40,
+    "min_percent": 1,
+    "default_percent": 5,
+    "note": "Profit participation is allocated from the Future Participants Pool. Allocation requests are reviewed and confirmed by Cosmic Development Corp."
+  },
+  "assumptions": {
+    "vacancy_percent": 0,
+    "operating_cost_percent_of_rent": 0,
+    "notes": "Calculator currently uses gross rent estimates unless you add operating costs/vacancy."
   },
   "outstanding_work_items": [
     { "item": "Final finishing + punch list", "budget_thb": 90000 },
@@ -31,56 +39,56 @@
   "timeline": [
     {
       "month": "2025-06",
-      "title": "Kickoff + demolition planning",
-      "highlights": ["Site assessment", "Scope locked", "Contractor coordination"],
+      "title": "Kickoff + scope locked",
+      "highlights": ["Scope finalized", "Planning + coordination", "Initial teardown prep"],
       "media": []
     },
     {
       "month": "2025-07",
-      "title": "Structural + layout changes (example)",
-      "highlights": ["Framing/partition adjustments", "Early rough work started"],
+      "title": "Build phase (update)",
+      "highlights": ["(Replace with your real July progress)"],
       "media": []
     },
     {
       "month": "2025-08",
-      "title": "Plumbing + electrical rough-in (example)",
-      "highlights": ["New runs", "Box placements", "Prep for finishes"],
+      "title": "Build phase (update)",
+      "highlights": ["(Replace with your real August progress)"],
       "media": []
     },
     {
       "month": "2025-09",
-      "title": "Roof + exterior improvements (example)",
-      "highlights": ["Roof work", "Weatherproofing", "Exterior prep"],
+      "title": "Build phase (update)",
+      "highlights": ["(Replace with your real September progress)"],
       "media": []
     },
     {
       "month": "2025-10",
-      "title": "Interior surfaces (example)",
-      "highlights": ["Walls/ceilings", "Prep for paint", "Fixes + smoothing"],
+      "title": "Build phase (update)",
+      "highlights": ["(Replace with your real October progress)"],
       "media": []
     },
     {
       "month": "2025-11",
-      "title": "Kitchen + bathrooms (example)",
-      "highlights": ["Install progress", "Fixtures planning"],
+      "title": "Build phase (update)",
+      "highlights": ["(Replace with your real November progress)"],
       "media": []
     },
     {
       "month": "2025-12",
-      "title": "Flooring + lighting (example)",
-      "highlights": ["Flooring install", "Lighting plan locked"],
+      "title": "Build phase (update)",
+      "highlights": ["(Replace with your real December progress)"],
       "media": []
     },
     {
       "month": "2026-01",
-      "title": "Final build-out (example)",
-      "highlights": ["Punch list started", "Rent readiness planning"],
+      "title": "Finalization phase (update)",
+      "highlights": ["(Replace with your real January progress)"],
       "media": []
     },
     {
       "month": "2026-02",
-      "title": "Current status (update this)",
-      "highlights": ["Outstanding work identified", "Preparing for rental marketing"],
+      "title": "Current status",
+      "highlights": ["Outstanding work identified (~300k THB)", "Preparing for rental readiness"],
       "media": []
     }
   ]
