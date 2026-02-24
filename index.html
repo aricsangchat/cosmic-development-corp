@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rawai Renovation — Timeline & Investor Option</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="hero">
+      <div>
+        <h1 id="projectName">Rawai Renovation</h1>
+        <p class="sub" id="projectMeta"></p>
+        <div class="chips">
+          <span class="chip" id="managerChip"></span>
+          <span class="chip">Updated: <span id="updatedMonth"></span></span>
+        </div>
+      </div>
+      <div class="heroCard">
+        <h3>Snapshot</h3>
+        <div class="kv">
+          <div class="k">Invested to date</div><div class="v" id="invested"></div>
+          <div class="k">Outstanding work</div><div class="v" id="outstanding"></div>
+          <div class="k">Est. rent / month</div><div class="v" id="rent"></div>
+          <div class="k">Est. sale value</div><div class="v" id="saleValue"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid2">
+      <section class="card">
+        <h2>Timeline (June 2025 → Current)</h2>
+        <p class="muted">Monthly progress log with photos and notes.</p>
+        <div id="timeline"></div>
+      </section>
+
+      <section class="card">
+        <h2>Outstanding Work (300,000 THB)</h2>
+        <p class="muted">Remaining items required before rental readiness.</p>
+        <div id="outstandingList"></div>
+        <div class="totalRow">
+          <span>Total</span>
+          <strong id="outstandingTotal"></strong>
+        </div>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Ownership & Current Costs</h2>
+      <div class="grid2">
+        <div>
+          <h3>Ownership shares</h3>
+          <div id="ownership"></div>
+          <p class="muted">Total cost basis currently tracked: <strong id="costBasis"></strong>.</p>
+        </div>
+        <div>
+          <h3>Returns quick view</h3>
+          <div class="kv">
+            <div class="k">Gross rent / year</div><div class="v" id="rentYear"></div>
+            <div class="k">Gross rent yield (vs. cost basis)</div><div class="v" id="yield"></div>
+            <div class="k">Sale upside range (vs. cost basis)</div><div class="v" id="upside"></div>
+          </div>
+          <p class="tiny muted">Note: This page shows high-level estimates. Taxes, selling costs, vacancy, repairs, and management fees are not included unless you add them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Investor Buy-In Option (Managed by Cosmic Development Corp.)</h2>
+      <p>
+        We currently have <strong>up to 50% of Terry’s shares available</strong> (up to <strong>25% of the total project</strong>),
+        <strong>plus</strong> the investor funds the <strong>outstanding work</strong>. Investor receives an equal proportion of:
+        <strong>rental profit</strong> and <strong>sale proceeds/profit</strong>, based on ownership percentage.
+      </p>
+
+      <div class="grid2">
+        <div class="subcard">
+          <h3>Structure</h3>
+          <ol class="muted">
+            <li><strong>Completion funding:</strong> 300,000 THB goes directly into finishing the property.</li>
+            <li><strong>Equity purchase:</strong> Investor buys a % of the total project from Terry’s shares (up to 25%).</li>
+            <li><strong>Participation:</strong> Investor receives proportional rental + sale outcomes.</li>
+          </ol>
+        </div>
+
+        <div class="subcard">
+          <h3>Example scenarios (editable)</h3>
+          <div id="scenarios"></div>
+          <p class="tiny muted">Equity buy-in is shown at cost-basis valuation by default (2.8M THB / 100 = 28,000 THB per 1%). You can change the pricing logic in <code>app.js</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="muted tiny">
+      © <span id="year"></span> Cosmic Development Corp. — Rawai Renovation info page.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
