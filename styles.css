@@ -1,20 +1,21 @@
 :root{
-  /* COSMIC TEMPLE RITUAL WEAR PALETTE */
 
-  --bg:#0b0b0d;                /* deep ritual black */
-  --card:#121214;              /* soft obsidian */
-  --card2:#17171a;             /* layered depth */
+  /* COSMIC TEMPLE — LIGHT RITUAL PALETTE */
 
-  --text:#e8e5dc;              /* warm ritual bone */
-  --muted:#a9a59a;             /* sand tone */
+  --bg:#f5f2ea;              /* temple sand */
+  --card:#ffffff;            /* pure card */
+  --card2:#fbf8f1;           /* soft layered background */
 
-  --line:rgba(232,229,220,0.08);
+  --text:#2a2722;            /* deep warm charcoal */
+  --muted:#7d766a;           /* soft stone */
 
-  --sand:#c9bfa6;              /* ritual sand */
-  --gold:#bfa36a;              /* muted temple gold */
-  --gold-soft:#d6c08a;
+  --line:rgba(0,0,0,0.06);
 
-  --shadow:rgba(0,0,0,0.45);
+  --sand:#b9a98a;            /* ritual accent */
+  --gold:#bfa36a;            /* muted gold */
+  --gold-soft:#d7c79f;
+
+  --shadow:rgba(0,0,0,0.06);
 }
 
 *{box-sizing:border-box}
@@ -27,7 +28,11 @@ body{
   letter-spacing:0.3px;
 }
 
-.wrap{max-width:1100px;margin:0 auto;padding:32px 24px}
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:40px 24px;
+}
 
 h1{
   font-size:34px;
@@ -81,21 +86,21 @@ h3{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:18px;
-  padding:22px;
-  box-shadow:0 30px 60px var(--shadow);
+  padding:24px;
+  box-shadow:0 20px 40px var(--shadow);
 }
 
 .subcard{
   background:var(--card2);
   border:1px solid var(--line);
   border-radius:16px;
-  padding:18px;
+  padding:20px;
 }
 
 .grid2{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:24px;
+  gap:28px;
 }
 @media (max-width:900px){.grid2{grid-template-columns:1fr}}
 
@@ -117,7 +122,7 @@ h3{
 }
 
 .chipGold{
-  border-color:rgba(191,163,106,0.35);
+  border-color:rgba(191,163,106,0.4);
   color:var(--gold);
 }
 
@@ -131,12 +136,12 @@ h3{
 .k{color:var(--muted)}
 .v{
   font-weight:600;
-  color:var(--sand);
+  color:#000;
 }
 
 .month{
   border-top:1px solid var(--line);
-  padding:14px 0;
+  padding:16px 0;
 }
 .month:first-child{border-top:none}
 
@@ -168,24 +173,24 @@ table{
 }
 td,th{
   border-bottom:1px solid var(--line);
-  padding:10px 6px;
+  padding:12px 6px;
   text-align:left;
   color:var(--muted);
 }
 th{
-  color:var(--sand);
+  color:#000;
   font-weight:500;
   letter-spacing:0.6px;
 }
 
 .glow{
-  border-color:rgba(191,163,106,0.25);
+  border-color:rgba(191,163,106,0.3);
 }
 
 .labelRow{
   display:flex;
   justify-content:space-between;
-  margin:16px 0 8px;
+  margin:18px 0 10px;
 }
 
 input[type="range"]{
@@ -196,15 +201,16 @@ input[type="range"]{
 .miniGrid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:16px;
-  margin-top:16px;
+  gap:18px;
+  margin-top:18px;
 }
 @media (max-width:900px){.miniGrid{grid-template-columns:1fr}}
 
 .mini{
   border:1px solid var(--line);
   border-radius:14px;
-  padding:14px;
+  padding:16px;
+  background:#fff;
 }
 
 .miniK{
@@ -217,7 +223,7 @@ input[type="range"]{
 .miniV{
   font-weight:600;
   font-size:17px;
-  color:var(--sand);
+  color:#000;
 }
 
 .field{
@@ -228,7 +234,7 @@ input[type="range"]{
 }
 
 input, textarea{
-  background:transparent;
+  background:#fff;
   border:1px solid var(--line);
   border-radius:14px;
   padding:12px 14px;
@@ -248,14 +254,14 @@ input:focus, textarea:focus{
 }
 
 .btn{
-  margin-top:18px;
+  margin-top:20px;
   width:100%;
   border:1px solid var(--gold);
   border-radius:20px;
   padding:14px;
   font-weight:500;
   letter-spacing:1px;
-  color:var(--bg);
+  color:white;
   background:var(--gold);
   cursor:pointer;
   transition:all 0.25s ease;
@@ -270,7 +276,7 @@ input:focus, textarea:focus{
   border:1px solid var(--line);
   border-radius:16px;
   padding:14px;
-  background:rgba(255,255,255,0.02);
+  background:#faf7f1;
   color:var(--muted);
 }
 
