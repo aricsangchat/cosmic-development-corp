@@ -1,0 +1,87 @@
+{
+  "project": {
+    "name": "Rawai Renovation — Timeline & Investor Option",
+    "manager": "Cosmic Development Corp.",
+    "location": "Rawai, Phuket, Thailand",
+    "timeline_start": "2025-06-01",
+    "timeline_current": "2026-02-01"
+  },
+  "financials": {
+    "invested_to_date_thb": 2800000,
+    "outstanding_work_thb": 300000,
+    "estimated_rent_thb_per_month": 30000,
+    "estimated_sale_value_thb_low": 4700000,
+    "estimated_sale_value_thb_high": 4900000
+  },
+  "ownership": [
+    { "name": "Aric", "percent": 50 },
+    { "name": "Terry", "percent": 50 }
+  ],
+  "investor_option": {
+    "shares_available_from": "Terry",
+    "max_percent_of_total_project_available": 25,
+    "note": "Up to 50% of Terry’s shares (i.e., up to 25% of the whole project) is available, plus the investor funds the outstanding work. Investor receives proportional rental profit + sale proceeds/profit."
+  },
+  "outstanding_work_items": [
+    { "item": "Final finishing + punch list", "budget_thb": 90000 },
+    { "item": "Furnishing package (rental-ready basics)", "budget_thb": 120000 },
+    { "item": "Deep clean + staging + photos", "budget_thb": 30000 },
+    { "item": "Minor repairs/contingency", "budget_thb": 60000 }
+  ],
+  "timeline": [
+    {
+      "month": "2025-06",
+      "title": "Kickoff + demolition planning",
+      "highlights": ["Site assessment", "Scope locked", "Contractor coordination"],
+      "media": []
+    },
+    {
+      "month": "2025-07",
+      "title": "Structural + layout changes (example)",
+      "highlights": ["Framing/partition adjustments", "Early rough work started"],
+      "media": []
+    },
+    {
+      "month": "2025-08",
+      "title": "Plumbing + electrical rough-in (example)",
+      "highlights": ["New runs", "Box placements", "Prep for finishes"],
+      "media": []
+    },
+    {
+      "month": "2025-09",
+      "title": "Roof + exterior improvements (example)",
+      "highlights": ["Roof work", "Weatherproofing", "Exterior prep"],
+      "media": []
+    },
+    {
+      "month": "2025-10",
+      "title": "Interior surfaces (example)",
+      "highlights": ["Walls/ceilings", "Prep for paint", "Fixes + smoothing"],
+      "media": []
+    },
+    {
+      "month": "2025-11",
+      "title": "Kitchen + bathrooms (example)",
+      "highlights": ["Install progress", "Fixtures planning"],
+      "media": []
+    },
+    {
+      "month": "2025-12",
+      "title": "Flooring + lighting (example)",
+      "highlights": ["Flooring install", "Lighting plan locked"],
+      "media": []
+    },
+    {
+      "month": "2026-01",
+      "title": "Final build-out (example)",
+      "highlights": ["Punch list started", "Rent readiness planning"],
+      "media": []
+    },
+    {
+      "month": "2026-02",
+      "title": "Current status (update this)",
+      "highlights": ["Outstanding work identified", "Preparing for rental marketing"],
+      "media": []
+    }
+  ]
+}
