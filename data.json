@@ -1,41 +1,47 @@
 {
+  "brand": {
+    "wordmark": "COSMIC DEVELOPMENT CORP",
+    "tagline": "Project Portfolio • Design + Build Execution",
+    "location": "Phuket, Thailand"
+  },
   "project": {
-    "name": "Rawai Renovation — Profit Participation",
-    "manager": "Cosmic Development Corp.",
+    "id": "Project 01",
+    "name": "Rawai Modern Calm Residence",
     "location": "Rawai, Phuket, Thailand",
-    "timeline_start": "2025-06-01",
-    "timeline_current": "2026-02-01"
+    "status": "Coming Soon • Available for Sale",
+    "starting_price_thb": 4500000,
+    "summary": "A 2 bedroom, 2 bath modern home designed as a calm space. Beige interior palette with a custom modern kitchen fully equipped with stove and oven.",
+    "specs": [
+      "2 Bedrooms",
+      "2 Bathrooms",
+      "Modern calm design",
+      "Beige interior palette",
+      "Custom modern kitchen",
+      "Fully equipped: stove + oven"
+    ]
   },
-  "financials": {
-    "invested_to_date_thb": 2800000,
-    "outstanding_work_thb": 300000,
-    "total_after_completion_thb": 3100000,
-    "estimated_rent_thb_per_month": 30000,
-    "estimated_sale_value_thb_low": 4700000,
-    "estimated_sale_value_thb_high": 4900000
+  "final_design": {
+    "title": "Final Design Direction",
+    "description": "The final look targets a soft modern calm: warm beige tones, clean lines, and an inviting kitchen + living flow.",
+    "renders": [
+      {
+        "label": "Exterior — Front (Render)",
+        "image": "assets/final/exterior-front-1.jpg"
+      },
+      {
+        "label": "Exterior — Carport (Render)",
+        "image": "assets/final/exterior-carport-1.jpg"
+      },
+      {
+        "label": "Interior — Living (Render)",
+        "image": "assets/final/interior-living-1.jpg"
+      },
+      {
+        "label": "Interior — Kitchen (Render)",
+        "image": "assets/final/interior-kitchen-1.jpg"
+      }
+    ]
   },
-  "profit_split": [
-    { "name": "Aric", "percent": 30 },
-    { "name": "Terry", "percent": 30 },
-    { "name": "Future Participants Pool", "percent": 40 }
-  ],
-  "participation": {
-    "max_pool_percent": 40,
-    "min_percent": 1,
-    "default_percent": 5,
-    "note": "Profit participation is allocated from the Future Participants Pool. Allocation requests are reviewed and confirmed by Cosmic Development Corp."
-  },
-  "assumptions": {
-    "vacancy_percent": 0,
-    "operating_cost_percent_of_rent": 0,
-    "notes": "Calculator currently uses gross rent estimates unless you add operating costs/vacancy."
-  },
-  "outstanding_work_items": [
-    { "item": "Final finishing + punch list", "budget_thb": 90000 },
-    { "item": "Furnishing package (rental-ready basics)", "budget_thb": 120000 },
-    { "item": "Deep clean + staging + photos", "budget_thb": 30000 },
-    { "item": "Minor repairs/contingency", "budget_thb": 60000 }
-  ],
   "timeline": [
     {
       "month": "2025-04-28",
@@ -152,30 +158,19 @@
       ]
     },
     {
-      "month": "2026-02",
-      "title": "Painting, Driveway & Carport Privacy Upgrade",
+      "month": "2026-02-24",
+      "title": "Driveway Leveling + Carport Privacy Decision",
       "highlights": [
         "Interior & exterior painting started (early Feb)",
         "Mid Feb: paint touchups & color matching",
-        "Feb 24: driveway leveling",
+        "Driveway leveling started",
         "Water well removed and ground leveled",
-        "Decision made to close carport walls for privacy"
+        "Decision: close the carport walls for more privacy (current status)"
       ],
       "photos": [
         "assets/progress/2026-02-paint-1.jpg",
         "assets/progress/2026-02-driveway-1.jpg"
       ]
     }
-  ],
-  "remaining_items": [
-    "Install kitchen",
-    "Install bathroom fixtures",
-    "Final painting touchups",
-    "Carport ceiling roof",
-    "Gutters around the house",
-    "Driveway tiles",
-    "Install water pump",
-    "Stain doors",
-    "Final cleaning"
   ]
 }
