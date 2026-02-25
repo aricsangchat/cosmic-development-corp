@@ -3,188 +3,104 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rawai Renovation — Profit Participation</title>
+  <title>Cosmic Development Corp — Project Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="wrap">
     <div class="hero">
-      <div>
-        <div class="brandRow">
-          <div class="sigil"></div>
-          <div>
-            <h1 id="projectName">Rawai Renovation</h1>
-            <p class="sub" id="projectMeta"></p>
-          </div>
-        </div>
+      <div class="brandBlock">
+        <div class="wordmark" id="wordmark">COSMIC DEVELOPMENT CORP</div>
+        <div class="tagline" id="tagline">Project Portfolio</div>
 
         <div class="chips">
-          <span class="chip" id="managerChip"></span>
-          <span class="chip">Updated: <span id="updatedMonth"></span></span>
-          <span class="chip chipGold">Profit Participation</span>
+          <span class="chip" id="projectId">Project 01</span>
+          <span class="chip" id="projectLocation">Rawai, Phuket</span>
+          <span class="chip chipGold" id="projectStatus">Coming Soon</span>
         </div>
 
-        <p class="muted note">
-          This page is an overview + allocation request interface. Allocation requests are reviewed and confirmed by Cosmic Development Corp.
-        </p>
+        <h1 class="projectTitle" id="projectName">Rawai Modern Calm Residence</h1>
+        <p class="sub" id="projectSummary"></p>
+
+        <div class="ctaRow">
+          <div class="priceBox">
+            <div class="priceLabel">Starting price</div>
+            <div class="priceValue" id="startingPrice"></div>
+            <div class="tiny muted">Available for sale — coming soon</div>
+          </div>
+          <a class="btn" href="#contact">Inquire</a>
+        </div>
       </div>
 
       <div class="heroCard">
-        <h3>Snapshot</h3>
-        <div class="kv">
-          <div class="k">Invested to date</div><div class="v" id="invested"></div>
-          <div class="k">Outstanding to rent-ready</div><div class="v" id="outstanding"></div>
-          <div class="k">Total after completion</div><div class="v" id="totalAfter"></div>
-          <div class="k">Est. rent / month</div><div class="v" id="rent"></div>
-          <div class="k">Est. sale value</div><div class="v" id="saleValue"></div>
-        </div>
+        <h3>Project Snapshot</h3>
+        <div class="specGrid" id="specs"></div>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="grid2">
-      <section class="card">
-        <h2>Timeline (June 2025 → Current)</h2>
-        <p class="muted">Monthly progress log with optional photos.</p>
-        <div id="timeline"></div>
-      </section>
+    <section class="card">
+      <div class="sectionHead">
+        <h2>Final Design Direction</h2>
+        <p class="muted" id="finalDesc"></p>
+      </div>
 
-      <section class="card">
-        <h2>Outstanding Work (~300,000 THB)</h2>
-        <p class="muted">Remaining items required before rental readiness.</p>
-        <div id="outstandingList"></div>
-        <div class="totalRow">
-          <span>Total (items)</span>
-          <strong id="outstandingTotal"></strong>
-        </div>
-        <p class="tiny muted">Note: outstanding is approximate; line-items can be adjusted as quotes finalize.</p>
-      </section>
+      <div class="renderGrid" id="renders"></div>
+
+      <div class="tiny muted" style="margin-top:10px">
+        Add your render images in <code>assets/final/</code> and update paths in <code>data.json</code>.
+      </div>
     </section>
 
     <section class="card">
-      <h2>Profit Split Allocation & Project Costs</h2>
-      <div class="grid2">
-        <div>
-          <h3>Profit split allocation</h3>
-          <div id="profitSplit"></div>
-          <p class="muted">
-            Current invested: <strong id="costBasis"></strong> •
-            Target total after completion: <strong id="targetTotal"></strong>
-          </p>
-        </div>
-        <div>
-          <h3>Returns quick view (est.)</h3>
-          <div class="kv">
-            <div class="k">Gross rent / year</div><div class="v" id="rentYear"></div>
-            <div class="k">Gross rent yield (vs. current invested)</div><div class="v" id="yieldCurrent"></div>
-            <div class="k">Gross rent yield (vs. total after completion)</div><div class="v" id="yieldTotal"></div>
-            <div class="k">Sale upside range (vs. total after completion)</div><div class="v" id="upside"></div>
-          </div>
-          <p class="tiny muted">
-            Calculator uses estimates and does not include vacancy, operating costs, taxes, or selling costs unless you add them.
-          </p>
-        </div>
+      <div class="sectionHead">
+        <h2>Build Timeline & Progress</h2>
+        <p class="muted">A documented month-by-month renovation journal (photos included).</p>
       </div>
+      <div id="timeline"></div>
     </section>
 
-    <section class="card glow" id="participate">
-      <h2>Request a Profit Participation Allocation</h2>
-      <p class="muted">
-        Select a participation percentage (from the <strong>40% Future Participants Pool</strong>) and submit your allocation request.
-        We’ll confirm availability and next steps.
-      </p>
-
-      <div class="grid2">
-        <div class="subcard">
-          <h3>Allocation calculator</h3>
-
-          <label class="labelRow">
-            <span>Requested participation</span>
-            <strong><span id="pctLabel">5</span>%</strong>
-          </label>
-          <input id="pct" type="range" min="0" max="40" step="1" value="5" />
-
-          <div class="miniGrid">
-            <div class="mini">
-              <div class="miniK">Est. contribution at completion valuation</div>
-              <div class="miniV" id="impliedContribution"></div>
-              <div class="tiny muted">Based on total after completion / 100 × % (editable logic).</div>
-            </div>
-            <div class="mini">
-              <div class="miniK">Est. rent share / month</div>
-              <div class="miniV" id="rentShare"></div>
-              <div class="tiny muted">Gross rent estimate × %.</div>
-            </div>
-            <div class="mini">
-              <div class="miniK">Est. sale proceeds share</div>
-              <div class="miniV" id="saleShare"></div>
-              <div class="tiny muted">Sale estimate range × %.</div>
-            </div>
-            <div class="mini">
-              <div class="miniK">Pool remaining (visual)</div>
-              <div class="miniV"><span id="poolMax">40</span>% max</div>
-              <div class="tiny muted">This is the allocation pool — requests are confirmed manually.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="subcard">
-          <h3>Submit request</h3>
-
-          <!-- Replace FORM_ACTION with your Formspree endpoint -->
-          <form id="allocationForm" action="FORM_ACTION" method="POST">
-            <input type="hidden" name="requested_participation_percent" id="requested_participation_percent" value="5" />
-            <input type="hidden" name="implied_contribution_thb" id="implied_contribution_thb" value="" />
-
-            <div class="field">
-              <label>Your name</label>
-              <input name="name" required placeholder="Full name" />
-            </div>
-
-            <div class="field">
-              <label>Email</label>
-              <input name="email" type="email" required placeholder="you@email.com" />
-            </div>
-
-            <div class="field">
-              <label>WhatsApp / Telegram (optional)</label>
-              <input name="messenger" placeholder="+66 / +55 / @handle" />
-            </div>
-
-            <div class="field">
-              <label>Country / Residency</label>
-              <input name="country" required placeholder="e.g., Thailand / Brazil / USA" />
-            </div>
-
-            <div class="field">
-              <label>Message (optional)</label>
-              <textarea name="message" rows="4" placeholder="Any notes, preferred amount, questions, timeline..."></textarea>
-            </div>
-
-            <label class="check">
-              <input type="checkbox" required />
-              <span class="muted">I understand this is an allocation request and not an automatic purchase.</span>
-            </label>
-
-            <button type="submit" class="btn">Request Allocation</button>
-
-            <p class="tiny muted" style="margin-top:10px">
-              Tip: Create a free Formspree form, then paste your endpoint into <code>FORM_ACTION</code>.
-            </p>
-          </form>
-        </div>
+    <section class="card" id="contact">
+      <div class="sectionHead">
+        <h2>Contact / Inquiries</h2>
+        <p class="muted">If you want the listing details or a private viewing, send a message.</p>
       </div>
 
-      <div class="disclaimer">
-        <strong>Disclaimer:</strong>
-        This page is provided for informational purposes and allocation requests. It does not constitute a public offer.
-        Participation terms, profit definitions, and distribution timing are governed by the final participation agreement.
-      </div>
+      <!-- Replace FORM_ACTION with your Formspree endpoint -->
+      <form class="contactForm" action="FORM_ACTION" method="POST">
+        <input type="hidden" name="project" value="Project 01 — Rawai Modern Calm Residence" />
+
+        <div class="field">
+          <label>Your name</label>
+          <input name="name" required placeholder="Full name" />
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input name="email" type="email" required placeholder="you@email.com" />
+        </div>
+
+        <div class="field">
+          <label>WhatsApp / Telegram (optional)</label>
+          <input name="messenger" placeholder="+66 / +55 / @handle" />
+        </div>
+
+        <div class="field">
+          <label>Message</label>
+          <textarea name="message" rows="4" required placeholder="Interested in the property, timeline for viewing, questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Inquiry</button>
+
+        <p class="tiny muted" style="margin-top:10px">
+          Tip: Create a Formspree form and paste the endpoint into <code>FORM_ACTION</code>.
+        </p>
+      </form>
     </section>
 
     <footer class="muted tiny">
-      © <span id="year"></span> Cosmic Development Corp. — Rawai Renovation info page.
+      © <span id="year"></span> Cosmic Development Corp. — Project Portfolio
     </footer>
   </main>
 
